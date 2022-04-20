@@ -20,8 +20,12 @@ const users = [
     {id:6, name: 'Tarin', email: 'tarin@gmail.com', phone: '01566667777'}
 ]
 
+// app.get('/users', (req, res) =>{
+//     res.send(users);
+// })
+
+// filter by search query parameter
 app.get('/users',(req,res)=>{
-    //filter by query
     if(req.query.name){
         const search = req.query.name.toLowerCase();
         const matched = users.filter(user => user.name.toLowerCase().includes(search))
@@ -53,7 +57,6 @@ app.post('/user', (req, res) =>{
 app.get('/fruits',(req,res)=>{
     res.send(['mango','apple','banana','litchi','oranges']);
 });
-
 
 
 app.listen(port,()=>{

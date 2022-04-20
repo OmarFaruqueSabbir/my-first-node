@@ -31,6 +31,13 @@
  *  "start": "node index.js",
     "start-dev": "nodemon index.js",
  *
- *
+-----------
+ * get
+ * -----------
+ * 1. cors middleware
+ * ---------------------
+ * post
+ * -----------------------
+ * 1.
  * 
  */
